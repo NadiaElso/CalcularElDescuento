@@ -1,13 +1,13 @@
 let btnEnv = document.getElementById("btnEnviar");
-let dato = document.getElementById("dato");
-let dato2 = document.getElementById("dato2");
+let PrecioInicial= document.getElementById("PrecioInicial");
+let Descuento = document.getElementById("Descuento");
 
 btnEnv.addEventListener("click", () => {
   // TU CODIGO VA AQUI, POR EJEMPLO:
-  let numeroA: number = Number(dato.value);
-  let numeroB: number = Number(dato2.value);
-  let resultado: number = numeroA * numeroB;
-  console.log("el area del rectangulo es:");
+  let numeroA: number = Number(PrecioInicial.value);
+  let numeroB: number = Number(Descuento.value);
+  let resultado: number = (numeroA * numeroB)/100;
+  console.log("el descuento es de:");
   console.log(resultado);
   //}
 });
